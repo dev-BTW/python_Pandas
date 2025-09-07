@@ -8,4 +8,8 @@ data = {
 
 
 df = pd.DataFrame(data)
-print(df)
+print(df,end="\n\n")
+
+print("Name column from dataframe",end="\n\n")
+x = df[["name"]] #Returns a dataframe of mentioned column name
+print(x)
