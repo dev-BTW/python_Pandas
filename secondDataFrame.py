@@ -1,3 +1,7 @@
+"""
+DF= dataframe
+"""
+
 import pandas as pd
 
 data = {
@@ -6,10 +10,9 @@ data = {
     "Speciality":["Punch","Sword","Kick","Punch","Sword","Meds","Navigate",["Knowledge","Punch"]]
     }
 
-
 df = pd.DataFrame(data)
-print(df,end="\n\n")
 
-print("Name column from dataframe",end="\n\n")
-x = df[["name"]] #Returns a new dataframe of mentioned column name
-print(x)
+#Retrieve Multiple columns 
+nameSpeciality = df[["name","Speciality"]] #Returns a new DF which contains character name speciality 
+print(nameSpeciality)
+
